@@ -2,6 +2,10 @@
 # Copyright (c) 2019-2020 Christian Hesse <mail@eworm.de>
 # https://git.eworm.de/cgit/routeros-scripts/about/COPYING.md
 
+# TODO: Remove on 2021-09-30
+:global CertificateAvailable
+$CertificateAvailable "Let's Encrypt Authority X3";
+
 # Changes for global-config to be added to notification on script updates
 :global GlobalConfigChanges {
    1="Moved variables from 'global-config' to 'global-functions' for independence";
@@ -20,4 +24,5 @@
   14="Dropped script 'script-updates', use '\$ScriptInstallUpdate' exclusively!";
   15="New documentation is online! https://git.eworm.de/cgit/routeros-scripts/about/#available-scripts";
   16="Happy with RouterOS Scripts and have a GitHub and/or GitLab account? Please star!";
+  17="updated Let's Encrypt trust chain";
 };
